@@ -1,0 +1,16 @@
+<div class="container">
+  <br/>
+  <br/>
+<table class="table table-bordered table-responsive table-condensed">
+  <tr>
+    <th class="col-md-2 " style="background-color:darkgoldenrod;text-align: center">Term</th>
+    <th  style="text-align: center ;background-color:darkgoldenrod">Definition</th>
+  </tr>
+  <tr *ngFor ="let item of params">
+    <td><span style="font-weight:bold">{{item.header}}</span></td>
+    <td>{{item.text}}
+      <a href="{{item.url}}" >{{item.target}}</a>
+      </td>
+    </tr>
+</table>
+  </div>
